@@ -59,3 +59,52 @@ val root3Fun: Double => Double = (a:Double) => {
 
 root3Fun(8)
 
+// Zad 4
+def matchA[A](xs : List[A]) = {
+  val List(_, _, x, _, _) = xs
+  x
+}
+
+def matchB[A](xs : List[A]) = {
+  val List(_, (x, _)) = xs
+  x
+}
+
+matchA(List(-2,-1,0,1,2)) == 0
+matchA(List("Hello", "World", 0, 2, "123")) == 0
+matchB(List((1,2),(0,1))) == 0
+matchB(List("Hello World!",(0, "123414"))) == 0
+
+// Zad 5
+
+def initSegment[A](xs : List[A], ys : List[A]) : Boolean = {
+  (xs, ys) match {
+    case (Nil, _) => true
+    case (_, Nil) => false
+    case (a, b) => if a.head == b.head then initSegment(a.tail, b.tail) else false
+  }
+}
+
+initSegment(List(1,2,3), List(1,2,3,4,5)) == true
+initSegment(List(1,2,3,4,5,6), List(1,2,3)) == false
+initSegment(List(), List(1,2,3)) == true
+initSegment(List(1,2,3,4,5,6), List()) == false
+
+// Zad 6
+def replaceNth[A](xs: List[A], n: Int, x: A): List[A] = {
+  def replaceIn[A](xs: List[A], n: Int, x: A, I : Int, rs: List[A]): List[A] = {
+    n match {
+      case I => rs ::: List(x) ::: xs.tail
+      case _ => replaceIn(xs.tail, n, x, I+1, rs ::: List(xs.head))
+    }
+  }
+  if n >= xs.length then throw new Exception("Wrong index!")
+  else replaceIn(xs, n, x, 0, List())
+}
+
+replaceNth(List(1,2,56,4), 2, 3) == List(1,2,3,4)
+replaceNth(List("My","name","is","Tomek"), 3, "Kacper") == List("My","name","is","Kacper")
+replaceNth(List(0,2,3,4), 0, 1) == List(1,2,3,4)
+
+
+
