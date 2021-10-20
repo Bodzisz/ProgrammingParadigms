@@ -23,8 +23,7 @@ def count[A] (x: A, xs: List[A]) : Int = {
       else countRecursion(x, xs.tail, r)
     }
   }
-  if!xs.contains(x) then 0
-  else countRecursion(x, xs, 0)
+  countRecursion(x, xs, 0)
 }
 
 count ('a', List('a', 'l', 'a')) == 2
@@ -79,12 +78,8 @@ palindrome(List('k', 'a', 'j', 'b',  'a', 'k')) == false
 
 // zadanie 6
 def listLength[A](xs: List[A]): Int = {
-  def listLengthRecursion[A](xs: List[A], i: Int): Int = {
-    if xs(i) == xs.last then i+1
-    else listLengthRecursion(xs, i+1)
-  }
   if xs == List() then 0
-  else listLengthRecursion(xs,0)
+  else listLength(xs.tail) + 1
 }
 
 listLength(List(1,2,3)) == 3
