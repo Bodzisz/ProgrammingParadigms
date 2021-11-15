@@ -11,13 +11,6 @@ let rec toLazyList = function
  [] -> LNil
  | x :: xs -> LCons(x, lazy (toLazyList xs));;
 
-let ltl = function
-  LNil -> failwith "ltl"
-  | LCons (_, lazy t) -> t;;
-
-let lhd = function
-  LNil -> failwith "lhd"
-  | LCons (x, _) -> x;;
 
 (* Zad 1 *)
 let rec lrepeat k llist = 
@@ -29,4 +22,6 @@ let rec lrepeat k llist =
   | LNil -> LNil
   | LCons(head, lazy ltail) -> lrepeatIn k head (lazy(lrepeat k ltail));;
 
-ltake(15,(lrepeat 3 (lfrom 3)));;
+ltake(15, lrepeat 3 (lfrom 3)) = [3; 3; 3; 4; 4; 4; 5; 5; 5; 6; 6; 6; 7; 7; 7];;
+ltake(15, lrepeat 3 (LNil)) = [];;
+ltake(12, lrepeat 4 (toLazyList ['a';'b';'c'])) = ['a';'a';'a';'a';'b';'b';'b';'b';'c';'c';'c';'c'];;
