@@ -25,3 +25,11 @@ let rec lrepeat k llist =
 ltake(15, lrepeat 3 (lfrom 3)) = [3; 3; 3; 4; 4; 4; 5; 5; 5; 6; 6; 6; 7; 7; 7];;
 ltake(15, lrepeat 3 (LNil)) = [];;
 ltake(12, lrepeat 4 (toLazyList ['a';'b';'c'])) = ['a';'a';'a';'a';'b';'b';'b';'b';'c';'c';'c';'c'];;
+
+(* Zad 2 *)
+let lfib =
+  let rec lfibIn actual next =
+    LCons(actual, lazy(lfibIn next (actual + next))) in
+  lfibIn 0 1;;
+
+ltake(10, lfib) = [0; 1; 1; 2; 3; 5; 8; 13; 21; 34];;

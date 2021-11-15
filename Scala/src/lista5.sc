@@ -13,3 +13,11 @@ lrepeat(3, LazyList(1,2,3)).toList == List(1,1,1,2,2,2,3,3,3)
 lrepeat(3, LazyList('a','b','c','d')).toList == List('a', 'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'd', 'd', 'd')
 lrepeat(0, LazyList(1,2,3)).toList == List()
 lrepeat(5, LazyList()).toList == List()
+
+// Zad 2
+val lfib : LazyList[Int] =
+  def lfibIn(actual : Int, next : Int) : LazyList[Int] =
+    actual #:: lfibIn(next, actual + next)
+  lfibIn(0,1)
+
+lfib.take(10).toList
