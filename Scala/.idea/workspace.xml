@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a610cca0-1b2c-4bee-8ff6-b447a9f8a0be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/Scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Scala.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scala.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -57,6 +58,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="6" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -99,8 +105,14 @@
       <workItem from="1635634235417" duration="422000" />
       <workItem from="1635634754261" duration="1016000" />
       <workItem from="1635700413976" duration="598000" />
+<<<<<<< HEAD
       <workItem from="1636969581235" duration="5005000" />
       <workItem from="1637363570000" duration="311000" />
+=======
+      <workItem from="1638037527529" duration="355000" />
+      <workItem from="1638037891800" duration="1751000" />
+      <workItem from="1638187845077" duration="20000" />
+>>>>>>> 00b1e4827d09570fb927107b6a466c8ce8b555f3
     </task>
     <servers />
   </component>
