@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a610cca0-1b2c-4bee-8ff6-b447a9f8a0be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Ocaml/lista3.ml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ocaml/lista3.ml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgrammingParadigmsEx.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Scala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +12,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -92,6 +99,8 @@
       <workItem from="1635634235417" duration="422000" />
       <workItem from="1635634754261" duration="1016000" />
       <workItem from="1635700413976" duration="598000" />
+      <workItem from="1636969581235" duration="5005000" />
+      <workItem from="1637363570000" duration="311000" />
     </task>
     <servers />
   </component>
