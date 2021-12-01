@@ -1,7 +1,7 @@
 // Kacper Wójcicki
 
 // Zad 1
-def whileLoop(condition : => Boolean)(expression : => Any) : Unit =
+def whileLoop(condition : => Boolean)(expression : => Unit) : Unit =
   if condition then
     expression
     whileLoop(condition)(expression)
