@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MyQueueImpl<E> implements MyQueue<E> {
     private final ArrayList<E> list;
-    private final int size;
+    private int size;
     private final int DEFAULT_SIZE = 10;
 
     public MyQueueImpl() {
